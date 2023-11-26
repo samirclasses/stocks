@@ -3,8 +3,16 @@
         <title>stock analysis</title>
       <!-- <script src="portfolio.js"></script> -->
         <link rel="stylesheet" type="text/css" href="style1.css">
+        <style>
+            .port{
+                width:100%;
+                height:600px;
+                border: 10px groove yellow;
+            }
+        </style>
     </head>
     <body>
+        <div class="port">
       <h2>Model Portfolio-1 (MultiCap Stocks): </h2>
          <label for="stocks"><font size="4"><b>SELECT FROM THE FOLLOWING OPTIONS:</b></font></label> 
       <select name="Portfolio-1" class="port1" id="port1" onchange='port1()'  >
@@ -64,9 +72,10 @@
                         
         <option value="vipind" id="vipind">VIP INDUSTRIES LTD</option>
       
-        
         </select>
-    
+         </div>
+      
+        <div class="port">>
       <h2>Model Portfolio-2 (Mid & SmallCap Stocks): </h2>
         <label for="stocks"><font size="4">SELECT FROM THE FOLLOWING OPTIONS:</font></label>  
         <select name="Portfolio-2" id="port2">
@@ -81,6 +90,8 @@
             <option>KILOSKER OIL ENGINE</option>
             <option>APL APOLLO LTD</option>
         </select>
+        </div>
+            <div class="port">
         <h2>Model Portfolio-3 (Mid & SmallCap Momentum Stocks): </h2>
         <label for="stocks"><font size="4">SELECT FROM THE FOLLOWING OPTIONS:</font></label>  
         <select name="Portfolio-2" id="port2">
@@ -116,6 +127,8 @@
             <option>UNITED SPIRITS LIMITED</option>
             
         </select>
+            </div>
+        <div class="port">>
         <h2>Model Portfolio-4 (SIP Stocks): </h2>
         <label for="stocks"><font size="4">SELECT FROM THE FOLLOWING OPTIONS:</font></label>  
         <select name="Portfolio-2" id="port2">
@@ -126,7 +139,7 @@
             <option>TATA MOTORS</option>
             <option>TATA STEEL</option>
         </select>
-        
+        </div>
         
     </body>
 </html>
